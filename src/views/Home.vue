@@ -163,7 +163,6 @@ export default defineComponent({
       document.getElementById(local).scrollIntoView({
         behavior: "smooth",
       });
-      this.toggleMenu()
     },
     handleScroll() {
       const windowheight = window.innerHeight;
