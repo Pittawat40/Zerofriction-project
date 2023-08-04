@@ -4,12 +4,10 @@
       ><img src="src/assets/pig.png" />Zero <span>friction</span></a
     >
     <nav>
-      <a style="--clr: #000000" class="active" @click="scrollElement('Home')"
-        >Home</a
-      >
-      <a style="--clr: #000000" @click="scrollElement('About')">About</a>
-      <a style="--clr: #d9ef0c" @click="scrollElement('Servrice')">Servrice</a>
-      <a style="--clr: #000000" @click="scrollElement('Contact')">Contact</a>
+      <a @click="scrollElement('Home')">Home</a>
+      <a @click="scrollElement('About')">About</a>
+      <a @click="scrollElement('Servrice')">Servrice</a>
+      <a @click="scrollElement('Contact')">Contact</a>
     </nav>
     <div class="toggle" @click="toggleMenu()">
       <font-awesome-icon
@@ -19,20 +17,16 @@
     </div>
     <div class="dropdown">
       <li>
-        <a style="--clr: #000000" class="active" @click="scrollElement('Home')"
-          >Home</a
-        >
+        <a @click="scrollElement('Home')">Home</a>
       </li>
       <li>
-        <a style="--clr: #000000" @click="scrollElement('About')">About</a>
+        <a @click="scrollElement('About')">About</a>
       </li>
       <li>
-        <a style="--clr: #d9ef0c" @click="scrollElement('Servrice')"
-          >Servrice</a
-        >
+        <a @click="scrollElement('Servrice')">Servrice</a>
       </li>
       <li>
-        <a style="--clr: #000000" @click="scrollElement('Contact')">Contact</a>
+        <a @click="scrollElement('Contact')">Contact</a>
       </li>
     </div>
   </header>
@@ -196,7 +190,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
 
 * {
   margin: 0;
@@ -267,6 +261,7 @@ header .dropdown li {
   justify-content: center;
   align-items: center;
   padding: 1.5rem 1rem;
+  cursor: pointer;
 }
 
 header .dropdown li a {
