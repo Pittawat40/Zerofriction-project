@@ -215,7 +215,7 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 10px 80px 10px;
+  padding: 15px 80px 15px;
   text-transform: uppercase;
   z-index: 1;
 }
