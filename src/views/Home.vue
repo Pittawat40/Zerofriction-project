@@ -11,14 +11,12 @@
       <a style="--clr: #d9ef0c" @click="scrollElement('Servrice')">Servrice</a>
       <a style="--clr: #000000" @click="scrollElement('Contact')">Contact</a>
     </nav>
-
     <div class="toggle" @click="toggleMenu()">
       <font-awesome-icon
         :icon="isOpen ? 'xmark' : 'bars'"
         class="toggle-icon"
       />
     </div>
-
     <div class="dropdown">
       <li>
         <a style="--clr: #000000" class="active" @click="scrollElement('Home')"
@@ -139,7 +137,7 @@
 import { defineComponent, ref } from "vue";
 
 export default defineComponent({
-  name: "HomeView",
+  name: "Home",
   components: {},
   created() {
     window.addEventListener("scroll", this.handleScroll);
@@ -165,6 +163,7 @@ export default defineComponent({
       document.getElementById(local).scrollIntoView({
         behavior: "smooth",
       });
+      this.toggleMenu()
     },
     handleScroll() {
       const windowheight = window.innerHeight;
@@ -187,22 +186,24 @@ export default defineComponent({
         img.classList.add("fadeInLeft");
         text.classList.add("fadeInRight");
       }
-      
-      const scroll = document.querySelector(".scroll-top")
+
+      const scroll = document.querySelector(".scroll-top");
       if (window.scrollY > 1500) {
-        scroll.style.display = "block"
-      } else scroll.style.display = "none"
+        scroll.style.display = "block";
+      } else scroll.style.display = "none";
     },
   },
 });
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Kanit", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -571,7 +572,7 @@ section {
   filter: invert(1);
 }
 
-.scroll-top{
+.scroll-top {
   position: fixed;
   display: none;
   bottom: 30px;
@@ -583,7 +584,7 @@ section {
   transition: 0.4s;
 }
 
-.scroll-top:hover{
+.scroll-top:hover {
   transform: translateY(-10px);
 }
 
