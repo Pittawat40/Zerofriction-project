@@ -455,7 +455,7 @@ section {
 
 .servrice .card .list {
   background: #fff;
-  margin: 0 1rem;
+  margin: 0.5rem 1rem;
   color: #000;
   max-width: 300px;
   border-radius: 0.5rem;
@@ -463,6 +463,12 @@ section {
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   border: 1px solid transparent;
   cursor: pointer;
+  transition: 0.4s;
+  scale: 1;
+}
+
+.servrice .card .list:hover {
+  scale: 1.1;
 }
 
 .list .list-content {
