@@ -21,6 +21,7 @@ export default defineConfig({
     }),
   ],
   define: { 'process.env': {} },
+  base: "/Zerofriction-project/",
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
