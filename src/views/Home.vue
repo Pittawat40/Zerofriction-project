@@ -1,7 +1,7 @@
 <template>
   <header>
     <a href="#" class="logo"
-      ><img src="src/assets/pig.png" />Zero <span>friction</span></a
+      ><img src="@/assets/pig.png" />Zero <span>friction</span></a
     >
     <nav>
       <a @click="scrollElement('Home')">Home</a>
@@ -43,7 +43,7 @@
       </div>
     </div>
     <div class="home-img fadeInRight">
-      <img src="src/assets/bic.png" />
+      <img src="@/assets/bic.png" />
     </div>
   </section>
 
@@ -55,7 +55,7 @@
         <span>lorem</span>
       </div>
       <div class="img">
-        <img src="src/assets/human.png" />
+        <img src="@/assets/human.png" />
       </div>
       <div class="content">
         <p>Lorem ipsum is simple</p>
@@ -76,7 +76,7 @@
     <div class="card">
       <div class="list" v-for="i in data" :key="i">
         <div class="list-img">
-          <img src="src/assets/bic2.png" />
+          <img src="@/assets/bic2.png" />
         </div>
         <div class="list-content">
           <p>{{ i.title }}</p>
@@ -90,7 +90,7 @@
 
   <section id="Contact" style="--clr: #000000" class="contact">
     <div class="contact-img">
-      <img src="src/assets/bic.png" />
+      <img src="@/assets/bic.png" />
     </div>
     <div class="contact-text">
       <span>ติดต่อเรา</span>
